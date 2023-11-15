@@ -1,10 +1,26 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo/pl-main-logo.png";
 import styles from "./Header.module.css";
+import {
+  getData,
+  options,
+  urlForLatestPremierLeagueTeams,
+} from "../../api/fetchData";
+import { useEffect, useState } from "react";
+import NavTeams from "../NavTeams/NavTeams";
 
 const Header = () => {
+  const [teams, setTeams] = useState([]);
+
+  useEffect(() => {
+    getData(urlForLatestPremierLeagueTeams, options).then((data) =>
+      setTeams(data.response)
+    );
+  }, []);
+
   return (
     <header className={styles.header}>
+      <NavTeams teamsArray={teams} />
       <nav className={styles.navbar}>
         <NavLink to="/" className={styles.navbarlink}>
           Home

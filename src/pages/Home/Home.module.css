@@ -1,0 +1,46 @@
+.table {
+  max-width: 40rem;
+  margin-top: 3rem;
+  border: 2px solid #3ea9ff;
+  border-radius: 2rem;
+}
+
+.herosection {
+  width: 100rem;
+  margin: 0 auto;
+}
+
+.tableupper {
+  background-color: #3ea9ff;
+  display: flex;
+  justify-content: left;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+.tableupper img {
+  width: 5rem;
+}
+
+.tableupper p {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.tablelower div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0 0.5rem;
+}
+
+.tablelower div img {
+  width: 4rem;
+  padding: 0.5rem;
+}

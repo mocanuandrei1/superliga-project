@@ -1,6 +1,8 @@
 .header {
   background-color: #37003c;
   font-size: 1.4rem;
+  z-index: 999;
+  position: sticky;
 }
 
 .navbar {
