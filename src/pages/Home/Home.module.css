@@ -1,13 +1,16 @@
 .table {
-  max-width: 40rem;
-  margin-top: 3rem;
   border: 2px solid #3ea9ff;
   border-radius: 2rem;
+  flex-basis: 30%;
 }
 
 .herosection {
-  width: 100rem;
-  margin: 0 auto;
+  max-width: 90rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+  padding: 0 1.5rem;
 }
 
 .tableupper {
@@ -21,11 +24,11 @@
 }
 
 .tableupper img {
-  width: 5rem;
+  width: 3rem;
 }
 
 .tableupper p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: bold;
 }
@@ -35,12 +38,117 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0 0.5rem;
 }
 
 .tablelower div img {
-  width: 4rem;
+  width: 3rem;
   padding: 0.5rem;
+}
+
+.heronews {
+  background-color: #37003c;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  height: fit-content;
+  flex-basis: 67%;
+}
+
+.heronewsmain {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+  border: 2px solid white;
+  justify-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.heronewsmain h1 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.heronewsmain h3 {
+  color: white;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.heronewssecond {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin: 2rem;
+  border: 1px solid white;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.heronewssecond h2 {
+  font-weight: 400;
+}
+.heronewssecond h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.heronewssecond img {
+  max-height: 12rem;
+}
+
+.sponsorssection {
+  max-width: 90rem;
+  margin: 3rem auto;
+}
+
+.sponsorssection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.articlessection {
+  max-width: 90rem;
+  margin: 3rem auto;
+}
+
+.articlessection h2 {
+  font-size: 2rem;
+}
+
+.articlessection div {
+  display: flex;
+  gap: 1rem;
+}
+
+.articlessection div div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding-bottom: 1rem;
+  box-shadow: 10px 10px 10px black;
+}
+
+.articlessection div h2 {
+  font-size: x-large;
+  padding: 0rem 2rem;
+}
+
+.articlessection div h4 {
+  padding: 0 2rem;
 }
